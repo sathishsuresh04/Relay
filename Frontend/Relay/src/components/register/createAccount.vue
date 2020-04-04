@@ -9,8 +9,8 @@
     </section>
     <section class="accountChoice">
       <p class="small">I am a</p>
-      <button @click="lender" :class="['accountChoiceBtn', selected1]">Lender and i have staff</button>
-      <button @click="renter" :class="['accountChoiceBtn', selected2]">Renter and i need staff</button>
+      <button @click="lender" :class="['accountChoiceBtn']">Lender and i have staff</button>
+      <button @click="renter" :class="['accountChoiceBtn']">Renter and i need staff</button>
     </section>
     <section class="registerForm">
       <label for="email">Your e-mail</label>
@@ -25,7 +25,7 @@
         class="registerInput"
       />
     </section>
-    <RegisterButton :buttonText="buttonText" />
+    <RegisterButton @click="signUp" :buttonText="buttonText" />
   </div>
 </template>
 
@@ -80,8 +80,9 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   color: $white;
+
 
   .headline {
     display: flex;
@@ -116,8 +117,8 @@ export default {
       border: none;
       border-bottom: 2px solid $white;
       background: none;
-      padding: 1.2rem 0;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.6rem;
+      padding: 1rem 0 0.3rem 0;
       font-size: $primary;
       color: $white;
     }
