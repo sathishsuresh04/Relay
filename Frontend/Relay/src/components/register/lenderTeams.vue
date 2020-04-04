@@ -80,6 +80,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   color: $white;
+  margin: auto 0 4rem 0;
 
   .headline {
     display: flex;
@@ -96,6 +97,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 2.4rem 0;
 
     label {
       color: $pink;
@@ -115,7 +117,6 @@ export default {
 
     .registerInput::placeholder {
       color: $white;
-      opacity: 0.5;
       font-size: $primary;
       font-weight: 500;
     }
@@ -123,6 +124,7 @@ export default {
 
   .addTeam {
     display: flex;
+    margin: 0 0 2.4rem 0;
     .add {
       display: flex;
       align-items: center;
@@ -142,6 +144,11 @@ export default {
     text-decoration: underline;
     align-self: center;
     cursor: pointer;
+    margin: auto;
+  }
+
+      img {
+    margin-top: auto;
   }
 }
 </style>

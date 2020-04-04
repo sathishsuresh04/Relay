@@ -5,7 +5,8 @@ const register = {
           createAccount: true,
           lenderProfileCreation: false,
           lenderTeams: false,
-          lenderSign: false
+          lenderSign: false,
+          registerCompleted: false
       }
   },
   mutations: {

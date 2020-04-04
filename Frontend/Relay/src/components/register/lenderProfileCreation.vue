@@ -96,11 +96,14 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   color: $white;
+  margin: auto 0 4rem 0;
 
   .headline {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    width: 40rem;
     a {
       font-size: $primary;
       font-weight: 600;
@@ -112,7 +115,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+margin: 2.4rem 0;
     label {
       color: $pink;
       font-size: $small;
@@ -131,10 +134,13 @@ export default {
 
     .registerInput::placeholder {
       color: $white;
-      opacity: 0.5;
       font-size: $primary;
       font-weight: 500;
     }
+  }
+
+      img {
+    margin-top: auto;
   }
 }
 </style>

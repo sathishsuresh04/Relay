@@ -77,8 +77,8 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   color: $white;
+  margin: auto 0 4rem 0;
 
   .headline {
     display: flex;
@@ -97,6 +97,7 @@ export default {
     text-align: center;
     color: $black;
     background: $white;
+    margin: 3.6rem 0;
     padding: 1rem 0.4rem 0 0.4rem;
     border-radius: 8px;
     height: 24rem;
@@ -132,8 +133,8 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 6rem;
-
+    height: 7rem;
+margin-bottom: 6rem;
     .check {
       display: flex;
       align-items: center;
@@ -162,6 +163,11 @@ export default {
     text-decoration: underline;
     align-self: center;
     cursor: pointer;
+    margin: auto;
+  }
+
+    img {
+    margin-top: auto;
   }
 }
 </style>

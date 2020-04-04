@@ -125,7 +125,6 @@ export default {
 
     .registerInput::placeholder {
       color: $white;
-      opacity: 0.5;
       font-size: $primary;
       font-weight: 500;
     }

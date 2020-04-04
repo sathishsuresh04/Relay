@@ -1,10 +1,17 @@
 <template>
-  <div class="wrapper">
+  <div :class="['wrapper', background]" id="register-view">
     <ExitBtn class="exit" />
     <CreateAccount v-if="this.$store.state.register.show.createAccount" class="register" />
-    <LenderProfileCreation v-if="this.$store.state.register.show.lenderProfileCreation" class="createAccount" />
+    <LenderProfileCreation
+      v-if="this.$store.state.register.show.lenderProfileCreation"
+      class="createAccount"
+    />
     <LenderTeams v-if="this.$store.state.register.show.lenderTeams" class="lenderTeams" />
     <LenderSign v-if="this.$store.state.register.show.lenderSign" class="lenderSign" />
+    <RegisterCompleted
+      v-if="this.$store.state.register.show.registerCompleted"
+      class="registerCompleted"
+    />
   </div>
 </template>
 
@@ -14,6 +21,7 @@ import CreateAccount from "../components/register/createAccount";
 import LenderProfileCreation from "../components/register/lenderProfileCreation";
 import LenderTeams from "../components/register/lenderTeams";
 import LenderSign from "../components/register/lenderSign";
+import RegisterCompleted from "../components/register/registerCompleted";
 
 export default {
   components: {
@@ -21,12 +29,19 @@ export default {
     CreateAccount,
     LenderProfileCreation,
     LenderTeams,
-    LenderSign
+    LenderSign,
+    RegisterCompleted
   },
   data: () => {
     return {
       CreateAccount: false
     };
+  },
+  computed: {
+    background() {
+      if (this.$store.state.register.show.registerCompleted === true)
+        return "background";
+    }
   }
 };
 </script>
@@ -67,10 +82,20 @@ export default {
   }
 
   .lenderSign {
-        width: 32rem;
+    width: 32rem;
     height: 72rem;
     align-self: center;
-
   }
+
+  .registerCompleted {
+    width: 32rem;
+    height: 50rem;
+    align-self: center;
+    background: none;
+  }
+}
+
+.background {
+  background: $white;
 }
 </style>
