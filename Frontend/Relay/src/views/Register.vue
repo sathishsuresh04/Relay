@@ -36,7 +36,7 @@ export default {
 
   .registerForm {
     width: 32rem;
-    height: 62rem;
+    height: 60rem;
     align-self: center;
   }
 }

@@ -98,11 +98,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15rem;
-  }
-
-  .renter {
-
+    height: 16rem;
   }
 
   .registerForm {
