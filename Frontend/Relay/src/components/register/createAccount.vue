@@ -10,7 +10,7 @@
     <section class="accountChoice">
       <p class="small">I am a</p>
       <button @click="lender" :class="['accountChoiceBtn', selected1]">Lender and i have staff</button>
-      <button @click="renter" :class="['accountChoiceBtn', selected2]">Renter and i have staff</button>
+      <button @click="renter" :class="['accountChoiceBtn', selected2]">Renter and i need staff</button>
     </section>
     <section class="registerForm">
       <label for="email">Your e-mail</label>
