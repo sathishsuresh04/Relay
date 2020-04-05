@@ -7,7 +7,13 @@
 
     <section class="registerForm">
       <label for="name">Name team</label>
-      <input v-model="name" type="text" name="name" placeholder="team name" class="registerInput" />
+      <input
+        v-model="teamName"
+        type="text"
+        name="name"
+        placeholder="team name"
+        class="registerInput"
+      />
 
       <label for="skillset">Skillset</label>
       <input
@@ -23,7 +29,7 @@
         v-model="location"
         type="text"
         name="location"
-        placeholder="Online or specify city"
+        placeholder="online or specify city"
         class="registerInput"
       />
       <label for="number">Number in team</label>
@@ -49,7 +55,7 @@
       </button>
     </div>
     <RegisterButton :buttonText="buttonText" />
-        <p class="previousStep">Go back to previous step</p>
+    <p class="previousStep">Go back to previous step</p>
     <img src="../../assets/graphics/progress-2.svg" alt="step 2" />
   </div>
 </template>
@@ -63,7 +69,12 @@ export default {
   },
   data: () => {
     return {
-      buttonText: "save % move to next step"
+      buttonText: "save & move to next step",
+      teamName: "",
+      skillset: "",
+      location: "",
+      teamNumber: "",
+      cost: ""
     };
   }
 };
@@ -140,14 +151,14 @@ export default {
     }
   }
 
-    .previousStep {
+  .previousStep {
     text-decoration: underline;
     align-self: center;
     cursor: pointer;
     margin: auto;
   }
 
-      img {
+  img {
     margin-top: auto;
   }
 }

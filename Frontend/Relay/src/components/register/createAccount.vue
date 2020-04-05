@@ -2,7 +2,7 @@
   <div class="wrapper">
     <section class="headline">
       <h2>Create an account</h2>
-      <p class>
+      <p>
         Already have an account?
         <a>Sign in here</a>
       </p>
@@ -41,7 +41,7 @@ export default {
       buttonText: "create my account",
       selected: "",
       email: "",
-      password: "",
+      password: ""
     };
   },
   methods: {
@@ -83,7 +83,6 @@ export default {
   justify-content: space-between;
   color: $white;
 
-
   .headline {
     display: flex;
     flex-direction: column;
@@ -92,6 +91,7 @@ export default {
       font-size: $primary;
       font-weight: 600;
       text-decoration: underline;
+      cursor: pointer;
     }
   }
 
