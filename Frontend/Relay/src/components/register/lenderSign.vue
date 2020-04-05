@@ -134,7 +134,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     height: 7rem;
-margin-bottom: 6rem;
+    margin-bottom: 6rem;
     .check {
       display: flex;
       align-items: center;
@@ -166,7 +166,7 @@ margin-bottom: 6rem;
     margin: auto;
   }
 
-    img {
+  img {
     margin-top: auto;
   }
 }

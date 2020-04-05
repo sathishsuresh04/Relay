@@ -6,8 +6,8 @@
 
 <style lang="scss">
 // google font
-@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap');
-@import "./assets/scss/variables.scss";
+ @import url("https://use.typekit.net/zpe7bvi.css");
+ @import "./assets/scss/variables.scss";
 
 
 * {
