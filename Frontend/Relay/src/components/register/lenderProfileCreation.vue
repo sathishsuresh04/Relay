@@ -20,12 +20,12 @@
         v-model="company"
         type="text"
         name="company"
-        placeholder="company name"
+        placeholder="Company name"
         class="registerInput"
       />
       <label for="role">Role</label>
       <select v-model="role" name="role" id="role" class="registerInput">
-        <option value>CEO/ Owner</option>
+        <option disabled value>CEO/ Owner</option>
         <option value>CEO</option>
         <option value>Owner</option>
         <option value>Other</option>
@@ -38,14 +38,6 @@
         type="text"
         name="location"
         placeholder="Online"
-        class="registerInput"
-      />
-      <label for="name">Your name</label>
-      <input
-        v-model="name"
-        type="text"
-        name="name"
-        placeholder="Firstname Lastname"
         class="registerInput"
       />
       <label for="sector">Sector</label>
@@ -66,7 +58,7 @@
       />
     </section>
     <RegisterButton @click="gotonextstep" :buttonText="buttonText" />
-    <img src="../../assets/graphics/progress-1.svg" alt="step 1">
+    <img src="../../assets/graphics/progress-1.svg" alt="step 1" />
   </div>
 </template>
 
@@ -79,7 +71,13 @@ export default {
   },
   data: () => {
     return {
-      buttonText: "save & move to next step"
+      buttonText: "save & move to next step",
+      name: "",
+      company: "",
+      role: "",
+      location: "",
+      sector: "",
+      linkedin: ""
     };
   }
 };
@@ -115,7 +113,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-margin: 2.4rem 0;
+    margin: 2.4rem 0;
     label {
       color: $pink;
       font-size: $small;
@@ -139,7 +137,7 @@ margin: 2.4rem 0;
     }
   }
 
-      img {
+  img {
     margin-top: auto;
   }
 }
