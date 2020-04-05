@@ -6,7 +6,8 @@
 
 <style lang="scss">
 // google font
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap');
+@import "./assets/scss/variables.scss";
 
 
 * {
@@ -14,5 +15,6 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: $primaryFont;
 }
 </style>
